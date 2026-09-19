@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0e13;
+  --bg-raised: #0f151b;
+  --line: #1d262e;
+  --ink: #e9edf0;
+  --muted: #8b98a3;
+  --accent: #46e0c4;
+  --accent-dim: #2a5f56;
+  --amber: #f2a545;
+  --section-px: 2.5rem;
+}
+
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-ticker { animation: ticker 22s linear infinite; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+.animate-float { animation: float 4s ease-in-out infinite; }
+
+.social-icon {
+  border-color: var(--line);
+  color: var(--muted);
+}
+.social-icon:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.nav-link:hover      { opacity: 0.7; }
+.project-card:hover  { border-color: var(--accent-dim); }
