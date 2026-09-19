@@ -61,52 +61,13 @@ export default function Hero() {
               ))}
             </div>
           </div>
-
-          {/* ── RIGHT — Terminal Card ── */}
-          <div className="animate-float rounded-lg overflow-hidden border" style={{ background: "var(--bg-raised)", borderColor: "var(--line)" }}>
-            {/* Bar */}
-            <div className="flex items-center justify-between px-4 py-3 border-b" style={{ borderColor: "var(--line)" }}>
-              <div className="flex gap-1.5">
-                {[0, 1, 2].map((i) => <span key={i} className="w-2.5 h-2.5 rounded-full" style={{ background: "#2a333c" }} />)}
-              </div>
-              <span className="font-mono text-xs" style={{ color: "var(--muted)" }}>profile.ts</span>
-              <div />
-            </div>
-
-            {/* Code */}
-            <div className="px-5 py-6 font-mono text-[13px] leading-7">
-              <span style={{ color: "#57697a" }}>// profile.ts — Developer Identity</span><br />
-              <span style={{ color: "#c586c0" }}>const</span>{" "}
-              <span style={{ color: "#7fd0ff" }}>profile</span>{" = "}
-              <span style={{ color: "#4ec9b0" }}>{"{"}</span><br />
-              &nbsp;&nbsp;<span style={{ color: "var(--ink)" }}>name</span>{": "}
-              <span style={{ color: "var(--amber)" }}>&quot;{siteConfig.name}&quot;</span>,<br />
-              &nbsp;&nbsp;<span style={{ color: "var(--ink)" }}>role</span>{": "}
-              <span style={{ color: "var(--amber)" }}>&quot;{siteConfig.role}&quot;</span>,<br />
-              &nbsp;&nbsp;<span style={{ color: "var(--ink)" }}>stack</span>{": "}
-              <span style={{ color: "#4ec9b0" }}>[</span>
-              {siteConfig.terminalStack.map((s, i) => (
-                <span key={s}>
-                  <span style={{ color: "var(--amber)" }}>&quot;{s}&quot;</span>
-                  {i < siteConfig.terminalStack.length - 1 ? ", " : ""}
-                </span>
-              ))}
-              <span style={{ color: "#4ec9b0" }}>]</span>,<br />
-              &nbsp;&nbsp;<span style={{ color: "var(--ink)" }}>openToWork</span>{": "}
-              <span style={{ color: "#c586c0" }}>true</span>,<br />
-              <span style={{ color: "#4ec9b0" }}>{"}"}</span><br /><br />
-              <span style={{ color: "#57697a" }}>// ready to ship</span>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 border-t" style={{ borderColor: "var(--line)" }}>
-              {heroStats.map((s) => (
-                <div key={s.label} className="py-4 text-center border-r last:border-r-0" style={{ borderColor: "var(--line)" }}>
-                  <b className="block font-mono text-lg" style={{ color: "var(--accent)" }}>{s.value}</b>
-                  <span className="font-mono text-[11px]" style={{ color: "var(--muted)" }}>{s.label}</span>
-                </div>
-              ))}
-            </div>
+        
+          <div
+            className="animate-float rounded-lg -translate-y-20">
+            <img
+              src="/assets/profile.png"
+              alt="Profile"
+              className="w-120 h-150 object-cover"/>
           </div>
 
         </div>
