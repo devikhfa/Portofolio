@@ -8,10 +8,6 @@ export default function Hero() {
 
           {/* ── LEFT ── */}
           <div>
-            {/* Badges */}
-            <div className="flex flex-wrap gap-2 mb-5">
-              <img src="/assets/uty.png" alt="UTY" className="object-contain" style={{ height: "50px", width: "auto" }} />
-            </div>
 
             {/* Name */}
             <h1 className="font-sans font-extrabold text-5xl lg:text-6xl leading-tight tracking-tight mb-4" style={{ color: "var(--ink)" }}>
@@ -42,8 +38,7 @@ export default function Hero() {
               <a href="#projects" className="text-sm font-semibold px-6 py-3" style={{ background: "var(--accent)", color: "#06110f", borderRadius: "3px" }}>
                 See My Projects
               </a>
-              <a href="#contact" className="font-mono text-sm px-6 py-3 border" style={{ borderColor: "var(--line)", color: "var(--ink)", borderRadius: "3px" }}>
-                &gt;_ Contact Me
+              <a href="#contact" className="font-mono text-sm px-6 py-3 border" style={{ borderColor: "var(--line)", color: "var(--ink)", borderRadius: "3px" }}> Contact Me
               </a>
             </div>
 
@@ -63,7 +58,7 @@ export default function Hero() {
           </div>
         
           <div
-            className="animate-float rounded-lg -translate-y-20">
+            className="animate-float rounded-lg -translate-y-27">
             <img
               src="/assets/profile.png"
               alt="Profile"

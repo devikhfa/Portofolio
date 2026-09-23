@@ -1,17 +1,17 @@
 // ─── Site Config ───────────────────────────────────────────────
 export const siteConfig = {
   name:     "Ikhfa",
-  role:     "Mobile Developer",
-  desc:     "Passionate developer yang fokus membangun produk dari nol — dari arsitektur backend, antarmuka, sampai deployment.",
+  role:     "Web Developer | Informatics Student",
+  desc:     "Mahasiswa Informatika yang memiliki ketertarikan pada web development dan software engineering. Saya senang membangun aplikasi yang fungsional, terstruktur, dan mudah digunakan sambil terus mengembangkan kemampuan programming.",
   email:    "email@example.com",
-  github:   "https://github.com/username",
+  github:   "https://github.com/devikhfa",
   linkedin: "https://linkedin.com/in/username",
   cv:       "/cv.pdf",
   terminalStack: ["Next.js", "TypeScript", "Node.js"],
 };
 
 // ─── Hero ───────────────────────────────────────────────────────
-export const heroTags    = ["Full-Stack Web", "Struktur Data & Algoritma", "UI/UX Design", "Cloud & DevOps"];
+export const heroTags    = ["Full-Stack Web", "Struktur Data & Algoritma", "Database & REST API"];
 export const heroStats   = [
   { value: "6+",  label: "PROJECTS"   },
   { value: "2×",  label: "HACKATHON"  },

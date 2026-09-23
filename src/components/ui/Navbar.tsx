@@ -17,7 +17,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2.5">
           <img
-            src="/avatar.jpg"
+            src="assets/profile.png"
             alt="Ikhfa"
             width={32}
             height={32}
